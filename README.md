@@ -1,4 +1,4 @@
-<!-- # Unsupervised Neural Network Music Generation
+# Unsupervised Neural Network Music Generation
 **Course:** CSE425 / EEE474  ·  Spring 2026  ·  Deadline: 10 April 2026
 
 ---
@@ -89,11 +89,6 @@ python src/preprocessing/tokenizer.py        # builds token sequences
 
 ### Step 4 — Train models
 ```bash
-# Task 1 – LSTM Autoencoder (Easy)
-python src/training/train_ae.py --epochs 50
-
-# Task 2 – VAE (Medium)
-python src/training/train_vae.py --epochs 50 --beta 0.5
 
 # Task 3 – Transformer (Hard)
 python src/training/train_transformer.py --epochs 50
@@ -111,8 +106,7 @@ python src/evaluation/pitch_histogram.py
 
 ### Step 6 — Generate music
 ```bash
-python src/generation/generate_music.py --model ae    --n 5
-python src/generation/generate_music.py --model vae   --n 8
+
 python src/generation/generate_music.py --model trans --n 10 --temperature 0.9
 python src/generation/generate_music.py --model rlhf  --n 10
 ```
@@ -185,4 +179,4 @@ r = rule-based reward or human survey score
    ```json
    {"survey_sample_01.mid": 4.0, "survey_sample_02.mid": 3.5, ...}
    ```
-4. Re-run RLHF: `python src/training/train_rl.py` -->
+4. Re-run RLHF: `python src/training/train_rl.py`
