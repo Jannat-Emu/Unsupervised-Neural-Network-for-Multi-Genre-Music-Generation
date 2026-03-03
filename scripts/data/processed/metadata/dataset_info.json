@@ -1,0 +1,10 @@
+{
+  "dataset": "MAESTRO v3.0.0",
+  "url": "https://storage.googleapis.com/magentadata/datasets/maestro/v3.0.0/maestro-v3.0.0-midi.zip",
+  "license": "Creative Commons Attribution Non-Commercial Share-Alike 4.0",
+  "total_tracks": 1276,
+  "genre": "Classical Piano",
+  "hours": 199,
+  "raw_midi_dir": "E:\\music-gen-project\\scripts\\data\\raw_midi",
+  "files": []
+}
