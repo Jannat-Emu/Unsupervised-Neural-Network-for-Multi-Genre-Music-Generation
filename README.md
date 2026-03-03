@@ -91,10 +91,10 @@ python src/preprocessing/tokenizer.py        # builds token sequences
 ```bash
 
 # Task 3 – Transformer (Hard)
-python src/training/train_transformer.py --epochs 50
+python src/training_task/train_transformer_3.py --epochs 50
 
 # Task 4 – RLHF (Advanced)
-python src/training/train_rl.py --rl_steps 200
+python src/training_task/train_rl_4.py --rl_steps 200
 ```
 
 ### Step 5 — Evaluate & visualise
@@ -165,8 +165,6 @@ r = rule-based reward or human survey score
 |-------|------|-----|-------------|---------------|
 | Random | — | — | 0.12 | 1.1 |
 | Markov | — | — | 0.31 | 2.3 |
-| Task 1 AE | 0.82 | — | 0.45 | 3.1 |
-| Task 2 VAE | 0.65 | — | 0.58 | 3.8 |
 | Task 3 Trans | — | 12.5 | 0.72 | 4.4 |
 | Task 4 RLHF | — | 11.2 | 0.79 | 4.8 |
 
@@ -179,4 +177,4 @@ r = rule-based reward or human survey score
    ```json
    {"survey_sample_01.mid": 4.0, "survey_sample_02.mid": 3.5, ...}
    ```
-4. Re-run RLHF: `python src/training/train_rl.py`
+4. Re-run RLHF: `python src/training_task/train_rl_4.py`
