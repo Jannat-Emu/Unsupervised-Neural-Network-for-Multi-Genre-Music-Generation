@@ -1,0 +1,12 @@
+venv/
+__pycache__/
+*.pyc
+
+data/raw_midi/
+data/processed/
+
+checkpoints/
+
+outputs/
+
+*.mid
